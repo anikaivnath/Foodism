@@ -5,7 +5,7 @@ import { faCartShopping, faEnvelope, faPhone, faSearch } from '@fortawesome/free
 const NavBar = () => {
   return (
     <div>
-        <div>
+        <div className='flex'>
         <div>
         <h1 className='text-4xl font-bold '>
             <span className='bg-green-400 w-max  text-white rounded-xl' >F</span>oodism
@@ -13,7 +13,7 @@ const NavBar = () => {
 
         </div>
 
-        <div className=' w-80 flex justify-around '>
+        <div className=' w-80 flex justify-around text-xl '>
         <p className='text-green-600'>Home</p>
         <p>Menu</p>
         <p>Services</p>

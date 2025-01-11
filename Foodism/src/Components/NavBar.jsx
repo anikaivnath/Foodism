@@ -6,7 +6,7 @@ const NavBar = () => {
         <div>
         <div>
         <h1>
-            <span >F</span>oodism
+            <span className='bg-green-400 w-max ' >F</span>oodism
         </h1>
 
         </div>

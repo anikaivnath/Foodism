@@ -1,4 +1,5 @@
 import React from 'react'
+import Intersect from "./Intersect.png";
 
 const HeroSection = () => {
   return (
@@ -13,7 +14,9 @@ const HeroSection = () => {
     </div>
     </div>
     <div>
-        <img src="./Intersect.png" alt="picture" />
+    <img src={Intersect} alt="picture" />
+
+
     </div>
 
     </div>

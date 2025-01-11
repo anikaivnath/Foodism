@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faEnvelope, faPhone, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
@@ -21,9 +21,10 @@ const NavBar = () => {
 
         </div>
 
-        <div>
-        <i> <FontAwesomeIcon icon={faEnvelope} /></i>
-        
+        <div className='flex flex-row justify-around w-40'> 
+        <i> <FontAwesomeIcon icon={faSearch} /></i>
+        <i> <FontAwesomeIcon icon={faCartShopping} /></i>
+        <i><FontAwesomeIcon icon={faPhone}/></i>
 
         </div>
         

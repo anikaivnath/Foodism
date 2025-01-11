@@ -12,11 +12,15 @@ const NavBar = () => {
         </div>
 
         <div className=' w-80 flex justify-around '>
-        <p>Home</p>
+        <p className='text-green-600'>Home</p>
         <p>Menu</p>
         <p>Services</p>
         <p>Offers</p>
 
+        </div>
+
+        <div>
+            
         </div>
         
 

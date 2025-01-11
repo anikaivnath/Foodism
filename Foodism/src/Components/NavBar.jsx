@@ -11,7 +11,7 @@ const NavBar = () => {
 
         </div>
 
-        <div clas>
+        <div className=' w-80 flex justify-around '>
         <p>Home</p>
         <p>Menu</p>
         <p>Services</p>

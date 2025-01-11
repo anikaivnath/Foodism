@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
@@ -20,7 +22,9 @@ const NavBar = () => {
         </div>
 
         <div>
-            
+        <i> <FontAwesomeIcon icon={faEnvelope} /></i>
+        
+
         </div>
         
 

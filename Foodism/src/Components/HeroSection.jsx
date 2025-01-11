@@ -12,6 +12,9 @@ const HeroSection = () => {
         <p className='bg-green-600 w-max p-2 text-white rounded-2xl  shadow-3xl mt-2'>Contact us</p>
     </div>
     </div>
+    <div>
+        <img src="./Intersect.png" alt="picture" />
+    </div>
 
     </div>
   )

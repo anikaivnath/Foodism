@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faEnvelope, faPhone, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faPhone, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (

@@ -10,6 +10,11 @@ const NavBar = () => {
         </h1>
 
         </div>
+        
+        <p>Home</p>
+        <p>Menu</p>
+        <p>Services</p>
+        <p>Offers</p>
 
     
         </div>

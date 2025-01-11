@@ -10,11 +10,15 @@ const NavBar = () => {
         </h1>
 
         </div>
-        
+
+        <div clas>
         <p>Home</p>
         <p>Menu</p>
         <p>Services</p>
         <p>Offers</p>
+
+        </div>
+        
 
     
         </div>

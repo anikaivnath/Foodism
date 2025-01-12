@@ -34,12 +34,9 @@ const HeroSection = () => {
       <div className='relative'>
         <img className='absolute mt-24 ml-10  w-[350px] hidden md:block' src={Rectangle} alt="background" />
         <img className='w-[300px] md:w-[400px] relative' src={Intersect} alt="picture" />
-        <div className="absolute top-6 left-8 bg-white px-3 py-1 rounded-lg shadow-md">
-    <p className="text-xs text-red-500 font-bold">Hot Spicy Food 🌶️</p>
-  </div>
 
 
-        <div className='absolute bottom-[-12px] flex gap-12'>
+        <div className='flex gap-12'>
 
         <div className='flex bg-sky-200 max-w-max h-[66px] rounded-lg shadow-2xl '>
         <img className='w-20 h-16' src={Item} alt="" />
@@ -71,8 +68,6 @@ const HeroSection = () => {
         <i> <FontAwesomeIcon icon={faStar} /></i>
         
         </div>
-        <p className='pb-2 text-sm text-center'> <span className='text-red-800'>$</span>2.00</p>
-       
 
           
         </div>
@@ -81,22 +76,6 @@ const HeroSection = () => {
         </div>
        
       </div>
-
-
-
-      
-
-
-
-
-
-
-      
-
-
-
-
-      
 
       
     </div>

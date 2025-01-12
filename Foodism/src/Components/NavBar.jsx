@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping, faPhone, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
+
   return (
     <div className='sticky top-0 z-50 shadow-sm p-4'>
         <div className='flex justify-around'>
@@ -12,9 +13,9 @@ const NavBar = () => {
         </h1>
         </div>
 
-        <div className=' w-80 flex justify-around text-xl mt-5 '>
+        <div className=' w-80 flex justify-around text-xl mt-5 cursor-pointer'>
         <p className='text-green-600'>Home</p>
-        <p>Menu</p>
+        <p className=''>Menu</p>
         <p>Services</p>
         <p>Offers</p>
 

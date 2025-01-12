@@ -57,7 +57,7 @@ const HeroSection = () => {
 
 
         <div className='flex bg-sky-200 max-w-max h-[66px] rounded-lg shadow-2xl '>
-        <img className='w-20 h-16' src={itm} alt="" />
+        <img className='w-20 h-16 rounded-lg' src={itm} alt="" />
         <div className=' p-2'>
         <p className='text-sm text-center'>Noodles</p>
         <div className='text-yellow-400 text-sm'>
@@ -66,7 +66,10 @@ const HeroSection = () => {
         <i> <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>
+        
         </div>
+        <p className='pb-2 text-sm text-center'> <span className='text-red-800'>$</span>18.00</p>
+       
 
           
         </div>

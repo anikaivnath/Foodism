@@ -13,7 +13,7 @@ const HeroSection = () => {
     </div>
     </div>
     <div>
-    <img className='w-[400px] mr-32 mt-16' src={Intersect} alt="picture" />
+    <img className='w-[400px] mr-32 mt-5' src={Intersect} alt="picture" />
 
 
     </div>

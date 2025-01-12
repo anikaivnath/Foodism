@@ -32,14 +32,14 @@ const HeroSection = () => {
 
       {/* Right Section */}
       <div className='relative'>
-        <img className='absolute mt-24 ml-10  w-[350px] hidden md:block' src={Rectangle} alt="background" />
-        <img className='w-[300px] md:w-[400px] relative' src={Intersect} alt="picture" />
+        <img className='absolute mt-32 ml-10  w-[400px] hidden md:block' src={Rectangle} alt="background" />
+        <img className='w-[460px] relative' src={Intersect} alt="picture" />
 
 
-        <div className='flex gap-12 absolute bottom-0 right-0'>
+        <div className='flex gap-16 absolute bottom-0 right-0'>
 
         <div className='flex bg-sky-200 text-sm max-w-max max-h-max rounded-lg shadow-2xl '>
-        <img className='w-20 h-16 pt-2' src={Item} alt="" />
+        <img className='w-20 h-[70px] pt-2' src={Item} alt="" />
         <div className='flex flex-col text-center pt-2  ' >
         <p className='text-sm '>salad</p>
         <div className='text-yellow-400 text-sm w-24'>
@@ -58,10 +58,10 @@ const HeroSection = () => {
 
 
         <div className='flex bg-sky-200 max-w-max h-[66px] rounded-lg shadow-2xl '>
-        <img className='w-20 h-16 rounded-lg' src={itm} alt="" />
+        <img className='w-20 h-[70px] rounded-lg' src={itm} alt="" />
         <div className=' p-2'>
         <p className='text-sm text-center'>Noodles</p>
-        <div className='text-yellow-400 text-sm'>
+        <div className='text-yellow-400 text-sm w-24'>
         <i > <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>
@@ -69,7 +69,7 @@ const HeroSection = () => {
         <i> <FontAwesomeIcon icon={faStar} /></i>
         
         </div>
-        <p className='pb-2 text-sm'> <span className='text-red-800'>$</span>23.00</p>
+        <p className='pb-2 text-sm text-center'> <span className='text-red-800'>$</span>18.00</p>
         
 
           

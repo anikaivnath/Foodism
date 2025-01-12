@@ -68,6 +68,8 @@ const HeroSection = () => {
         <i> <FontAwesomeIcon icon={faStar} /></i>
         
         </div>
+        <p className='pb-2 text-sm text-center'> <span className='text-red-800'>$</span>23.00</p>
+        
 
           
         </div>

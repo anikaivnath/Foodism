@@ -34,14 +34,18 @@ const HeroSection = () => {
       <div className='relative'>
         <img className='absolute mt-32 ml-10  w-[400px] hidden md:block' src={Rectangle} alt="background" />
         <img className='w-[460px] relative' src={Intersect} alt="picture" />
+        <div className="absolute top-6 left-8 bg-white px-3 py-1 rounded-lg shadow-md">
+    <p className="text-xs text-red-500 font-bold mt-10">Hot Spicy Food 🌶️</p>
+  </div>
 
 
         <div className='flex gap-16 absolute bottom-0 right-0'>
+        
 
         <div className='flex bg-sky-200 text-sm max-w-max max-h-max rounded-lg shadow-2xl '>
-        <img className='w-20 h-[70px] pt-2' src={Item} alt="" />
-        <div className='flex flex-col text-center pt-2  ' >
-        <p className='text-sm '>salad</p>
+        <img className='w-20 h-[70px] ' src={Item} alt="" />
+        <div className='flex flex-col text-center   ' >
+        <p className='text-sm'>salad</p>
         <div className='text-yellow-400 text-sm w-24'>
         <i > <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>

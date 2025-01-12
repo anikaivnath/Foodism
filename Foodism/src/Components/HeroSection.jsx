@@ -30,8 +30,8 @@ const HeroSection = () => {
 
       {/* Right Section */}
       <div className='relative'>
-        <img className='absolute mt-16 ml-2 w-[350px] hidden md:block' src={Rectangle} alt="background" />
-        <img className='w-[300px] md:w-[400px] relative mr-2' src={Intersect} alt="picture" />
+        <img className='absolute mt-32  w-[350px] hidden md:block' src={Rectangle} alt="background" />
+        <img className='w-[300px] md:w-[400px] relative ' src={Intersect} alt="picture" />
       </div>
     </div>
   );

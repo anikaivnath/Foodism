@@ -4,7 +4,7 @@ import { faCartShopping, faPhone, faSearch } from '@fortawesome/free-solid-svg-i
 
 const NavBar = () => {
   return (
-    <div className='sticky top-0 z-50 shadow-md p-4'>
+    <div className='sticky top-0 z-50 shadow-sm p-4'>
         <div className='flex justify-around'>
         <div>
         <h1 className='text-4xl font-bold mt-2 '>

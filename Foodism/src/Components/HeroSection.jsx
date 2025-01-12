@@ -53,11 +53,21 @@ const HeroSection = () => {
 
 
 
-        <div>
+        <div className='flex bg-sky-200 max-w-max h-[66px] rounded-lg shadow-2xl pt-2 '>
         <img className='w-20 h-16' src={itm} alt="" />
         <div>
+        <p className='text-sm text-center'>Noodles</p>
+        <div className='text-yellow-400 text-sm'>
+        <i > <FontAwesomeIcon icon={faStar} /></i>
+        <i> <FontAwesomeIcon icon={faStar} /></i>
+        <i> <FontAwesomeIcon icon={faStar} /></i>
+        <i> <FontAwesomeIcon icon={faStar} /></i>
+        <i> <FontAwesomeIcon icon={faStar} /></i>
+        </div>
+
           
         </div>
+        
         </div>
        
       </div>

@@ -25,7 +25,6 @@ const NavBar = () => {
         <i className='text-xl'> <FontAwesomeIcon icon={faSearch} /></i>
         <i className='text-xl'> <FontAwesomeIcon icon={faCartShopping} /></i>
         <i className='text-xl text-white bg-green-400 px-4 rounded-xl'><FontAwesomeIcon icon={faPhone}/></i>
-
         </div>
         
 

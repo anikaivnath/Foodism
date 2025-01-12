@@ -35,6 +35,9 @@ const HeroSection = () => {
         <img className='absolute mt-24 ml-10  w-[350px] hidden md:block' src={Rectangle} alt="background" />
         <img className='w-[300px] md:w-[400px] relative' src={Intersect} alt="picture" />
 
+
+        <div className='flex gap-12'>
+
         <div className='flex bg-sky-200 max-w-max h-[66px] rounded-lg shadow-2xl '>
         <img className='w-20 h-16' src={Item} alt="" />
         <div className='flex flex-col text-center pt-2 p-2 ' >
@@ -53,9 +56,9 @@ const HeroSection = () => {
 
 
 
-        <div className='flex bg-sky-200 max-w-max h-[66px] rounded-lg shadow-2xl pt-2 '>
+        <div className='flex bg-sky-200 max-w-max h-[66px] rounded-lg shadow-2xl '>
         <img className='w-20 h-16' src={itm} alt="" />
-        <div>
+        <div className=' p-2'>
         <p className='text-sm text-center'>Noodles</p>
         <div className='text-yellow-400 text-sm'>
         <i > <FontAwesomeIcon icon={faStar} /></i>
@@ -68,6 +71,7 @@ const HeroSection = () => {
           
         </div>
         
+        </div>
         </div>
        
       </div>

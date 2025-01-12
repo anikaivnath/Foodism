@@ -68,7 +68,7 @@ const HeroSection = () => {
         <i> <FontAwesomeIcon icon={faStar} /></i>
         
         </div>
-        <p className='pb-2 text-sm text-center'> <span className='text-red-800'>$</span>18.00</p>
+        <p className='pb-2 text-sm text-center'> <span className='text-red-800'>$</span>.00</p>
        
 
           
@@ -78,23 +78,6 @@ const HeroSection = () => {
         </div>
        
       </div>
-
-
-
-      
-
-
-
-
-
-
-      
-
-
-
-
-      
-
       
     </div>
   );

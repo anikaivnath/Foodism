@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faStar } from '@fortawesome/free-solid-svg-icons'
+// import item(2) from './item(2).png'
 import Item from "./Item.png"
 import Intersect from "./Intersect.png";
 import Rectangle from "./Rectangle 9.png";
@@ -34,18 +35,18 @@ const HeroSection = () => {
         <img className='absolute mt-24 ml-10  w-[350px] hidden md:block' src={Rectangle} alt="background" />
         <img className='w-[300px] md:w-[400px] relative' src={Intersect} alt="picture" />
 
-        <div className='flex bg-sky-200 max-w-max max-h-min rounded-lg shadow-2xl '>
+        <div className='flex bg-sky-200 max-w-max h-[66px] rounded-lg shadow-2xl '>
         <img className='w-20 h-16' src={Item} alt="" />
         <div className='flex flex-col text-center pt-2 p-2 ' >
-        <p className=''>Vegetarian salad</p>
-        <div className='text-yellow-400'>
+        <p className='text-sm'>Vegetarian salad</p>
+        <div className='text-yellow-400 text-sm'>
         <i > <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>
         <i> <FontAwesomeIcon icon={faStar} /></i>
         </div>
-        <p className='pb-2'> <span className='text-red-800'>$</span>23.00</p>
+        <p className='pb-2 text-sm'> <span className='text-red-800'>$</span>23.00</p>
         </div>
         
 
@@ -56,6 +57,15 @@ const HeroSection = () => {
         </div>
        
       </div>
+
+
+
+      
+
+
+
+
+
 
       
 

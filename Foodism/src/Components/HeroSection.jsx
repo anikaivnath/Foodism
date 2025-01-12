@@ -35,7 +35,10 @@ const HeroSection = () => {
         <img className='absolute mt-32 ml-10  w-[400px] hidden md:block' src={Rectangle} alt="background" />
         <img className='w-[460px] relative' src={Intersect} alt="picture" />
         <div className="absolute top-6 left-8 bg-white px-3 py-1 rounded-lg shadow-md">
-    <p className="text-xs text-red-500 font-bold mt-10">Hot Spicy Food 🌶️</p>
+        <div>
+          
+        </div>
+    <p className="text-xs text-red-500 font-bold relative ">Hot Spicy Food 🌶️</p>
   </div>
 
 

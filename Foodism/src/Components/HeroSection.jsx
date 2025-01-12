@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faStar } from '@fortawesome/free-solid-svg-icons'
-import item(2) from './item(2).png'
+import itm  from './itm.png'
 import Item from "./Item.png"
 import Intersect from "./Intersect.png";
 import Rectangle from "./Rectangle 9.png";
@@ -54,7 +54,10 @@ const HeroSection = () => {
 
 
         <div>
-          <img src={item(2).png} alt="" />
+        <img className='w-20 h-16' src={itm} alt="" />
+        <div>
+          
+        </div>
         </div>
        
       </div>

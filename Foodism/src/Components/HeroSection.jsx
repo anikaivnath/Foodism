@@ -1,28 +1,40 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faPhone, faSearch } from '@fortawesome/free-solid-svg-icons'
-
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import Intersect from "./Intersect.png";
+import Rectangle from "./Rectangle 9.png";
 
 const HeroSection = () => {
   return (
-    <div className='flex justify-between'>
-    <div className='  text-justify ml-32 mt-32 '>
-        <h1 className='text-3xl font-bold  w-[280px]' >Dive into Delights Of Delectable <span className='text-green-400'>Food</span> </h1>
-        <p className='w-[320px] mt-4'>Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
-    <div className='flex gap-4'>
-        <p className='bg-green-600 w-max pl-4 pr-4 text-center  text-white rounded-2xl shadow-3xl mt-2'>Order Now</p>
-        <p className='bg-green-600 w-max p-2 text-white rounded-2xl  shadow-3xl mt-2'>  <i className='p-2'> <FontAwesomeIcon icon={faPhone} /></i>Contact us</p>
-    </div>
-    </div>
-    <div>
-    <img className='w-[400px] mr-32 mt-5' src={Intersect} alt="picture" />
+    <div className='flex justify-between items-center px-8 md:px-32 py-12'>
+      {/* Left Section */}
+      <div className='text-justify'>
+        <h1 className='text-3xl md:text-4xl font-bold w-[280px] md:w-[400px]'>
+          Dive into Delights Of Delectable <span className='text-green-400'>Food</span>
+        </h1>
+        <p className='w-[320px] md:w-[400px] mt-4 text-gray-700'>
+          Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship
+        </p>
+        
+        {/* Buttons */}
+        <div className='flex gap-4 mt-4'>
+          <button className='bg-green-600 text-white px-6 py-2 rounded-2xl shadow-md hover:bg-green-700 transition'>
+            Order Now
+          </button>
+          <button className='bg-green-600 text-white px-4 py-2 rounded-2xl shadow-md flex items-center gap-2 hover:bg-green-700 transition'>
+            <FontAwesomeIcon icon={faPhone} />
+            Contact Us
+          </button>
+        </div>
+      </div>
 
-
+      {/* Right Section */}
+      <div className='relative'>
+        <img className='absolute mt-12 ml-2 w-[450px] hidden md:block' src={Rectangle} alt="background" />
+        <img className='w-[300px] md:w-[400px] relative' src={Intersect} alt="picture" />
+      </div>
     </div>
-
-    </div>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;

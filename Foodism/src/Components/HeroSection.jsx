@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import item from "item.png"
 import Intersect from "./Intersect.png";
 import Rectangle from "./Rectangle 9.png";
 
@@ -32,6 +33,7 @@ const HeroSection = () => {
       <div className='relative'>
         <img className='absolute mt-24 ml-10  w-[350px] hidden md:block' src={Rectangle} alt="background" />
         <img className='w-[300px] md:w-[400px] relative' src={Intersect} alt="picture" />
+        <img src="{item}" alt="" />
       </div>
     </div>
   );

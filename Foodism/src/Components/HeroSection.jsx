@@ -20,10 +20,10 @@ const HeroSection = () => {
         
         {/* Buttons */}
         <div className='flex gap-4 mt-4'>
-          <button className='bg-green-600 text-white px-6 py-2 rounded-2xl shadow-md hover:bg-green-700 transition'>
+          <button className='bg-green-600 text-white px-6 py-2 rounded-2xl shadow-md hover:bg-green-700 transition shadow-lg'>
             Order Now
           </button>
-          <button className='bg-green-600 text-white px-4 py-2 rounded-2xl shadow-md flex items-center gap-2 hover:bg-green-700 transition'>
+          <button className='bg-green-600 shadow-lg text-white px-4 py-2 rounded-2xl shadow-md flex items-center gap-2 hover:bg-green-700 transition'>
             <FontAwesomeIcon icon={faPhone} />
             Contact Us
           </button>

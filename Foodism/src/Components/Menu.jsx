@@ -9,6 +9,7 @@ const FoodRecipes = () => {
       .then(response => setRecipes(response.data.meals))
       .catch(error => console.error("Error fetching data:", error));
   }, []);
+  
 
   return (
     <div>

@@ -35,7 +35,7 @@ const FoodRecipes = () => {
   return (
     <div>
       <div className="text-center m-4 font-custom">
-        <h1 className="text-2xl font-bold">{foodName} List </h1>
+        <h1 className="text-2xl font-bold font-custom">{foodName} List </h1>
       </div>
 
       {loading ? (

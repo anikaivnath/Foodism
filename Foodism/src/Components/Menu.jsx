@@ -25,11 +25,11 @@ const menuItems = [
 
 const Menu = () => {
   return (
-    <div>
-      <div className='text-center m-4 font-custom'>
+    <div className='bg-blue-100'>
+      <div className='text-center p-4 font-custom '>
         <h1 className='text-xl'>Satisfy your cravings with food made to lift your mood</h1>
       </div>
-      <div className='flex flex-wrap justify-center gap-10'>
+      <div className='flex flex-wrap justify-center gap-10 drop-shadow-lg'>
         {menuItems.map((item, index) => (
           <div key={index} className='text-center'>
             <img className='w-[300px] h-[300px] rounded-lg' src={item.src} alt={item.name} />

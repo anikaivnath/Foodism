@@ -16,17 +16,33 @@ const apiEndpoints = {
 };
 
 const FoodRecipes = () => {
-  const { foodName } = useParams(); 
+  const { foodName } = useParams();
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [prices, setPrices] = useState({}); // Store meal prices
 
   useEffect(() => {
     if (!foodName || !apiEndpoints[foodName]) return;
 
+    setLoading(true);
     axios
       .get(apiEndpoints[foodName])
       .then((response) => {
-        setRecipes(response.data.meals || []); // Handle empty results
+        const meals = response.data.meals || [];
+        setRecipes(meals);
+        return axios.get("https://fakestoreapi.com/products");
+      })
+      .then((response) => {
+        const productPrices = response.data.map((product) => product.price);
+        
+        // Assign random prices to meals
+        setPrices((prevPrices) => {
+          const newPrices = {};
+          recipes.forEach((meal, index) => {
+            newPrices[meal.idMeal] = productPrices[index % productPrices.length];
+          });
+          return newPrices;
+        });
       })
       .catch((error) => console.error("Error fetching data:", error))
       .finally(() => setLoading(false));
@@ -35,7 +51,7 @@ const FoodRecipes = () => {
   return (
     <div>
       <div className="text-center m-4 font-custom">
-        <h1 className="text-2xl font-bold font-custom">{foodName} List </h1>
+        <h1 className="text-2xl font-bold font-custom">{foodName} List</h1>
       </div>
 
       {loading ? (
@@ -50,6 +66,7 @@ const FoodRecipes = () => {
                 className="w-[250px] h-[250px] rounded-xl"
               />
               <h3 className="mt-2 font-custom text-lg">{meal.strMeal}</h3>
+              <p className="text-red-800 font-bold">Price: ${prices[meal.idMeal] || "Loading..."}</p>
               <div className="mt-2">
                 <a
                   className="bg-green-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-green-700 inline-block"

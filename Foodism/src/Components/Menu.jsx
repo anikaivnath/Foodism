@@ -1,6 +1,8 @@
 import React from 'react';
 import Burger from './image/Burger.png';  
 
+
+
 const Menu = () => {
   return (
     <div>
@@ -9,6 +11,7 @@ const Menu = () => {
       </div>
       <div>
         <img src={Burger} alt="Burger" />
+        <img className='w-28 h-20 rounded-lg' src={image} alt="" />
       </div>
     </div>
   );

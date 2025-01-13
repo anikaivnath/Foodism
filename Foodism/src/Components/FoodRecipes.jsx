@@ -63,7 +63,7 @@ const FoodRecipes = () => {
       {loading ? (
         <p className="text-center text-gray-500">Loading...</p>
       ) : recipes.length > 0 ? (
-        <div className="flex flex-wrap justify-center gap-10 shadow-3xl">
+        <div className="flex flex-wrap justify-center gap-10 shadow-lg">
           {recipes.map((meal) => (
             <div key={meal.idMeal} className="text-center">
               <img

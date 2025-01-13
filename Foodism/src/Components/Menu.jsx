@@ -13,16 +13,17 @@ import Soup from "./image/Soup.png";
 import Cake from "./image/Cake.png";
 
 const menuItems = [
-  { src: Burger, name: "Burger" },
+  { src: Soup, name: "Soup" },
+  { src: Cake, name: "Cake" },
+  { src: Fish, name: "Fish" },
+  { src: Chicken, name: "Chicken" },
   { src: pizza, name: "Pizza" },
   { src: pasta, name: "Pasta" },
   { src: Rice, name: "Rice" },
   { src: Sushi, name: "Sushi" },
-  { src: Fish, name: "Fish" },
-  { src: Chicken, name: "Chicken" },
   { src: salad, name: "Salad" },
-  { src: Soup, name: "Soup" },
-  { src: Cake, name: "Cake" }
+  { src: Burger, name: "Burger" }
+
 ];
 
 const Menu = () => {
@@ -38,8 +39,7 @@ const Menu = () => {
             <img className='w-[300px] h-[300px] rounded-lg' src={item.src} alt={item.name} />
             <div className='font-custom mt-2'>
               <p className='text-xl'>{item.name}</p>
-              <p 
-                className='font-custom mt-2 bg-green-600 text-white rounded-lg p-2 cursor-pointer hover:bg-green-700'
+              <p className='font-custom mt-2 bg-green-600 text-white rounded-lg p-2 cursor-pointer hover:bg-green-700'
                 onClick={() => navigate(`/food/${item.name}`)} 
               >
                 View

@@ -15,8 +15,7 @@ const FoodRecipes = () => {
       <div className="flex">
       <ul className="flex flex-wrap gap-4">
         {recipes?.map(meal => (
-          <li key={meal.idMeal}>
-            
+          <li key={meal.idMeal}>  
             <img src={meal.strMealThumb} alt={meal.strMeal} width="200px" />
             <h3>{meal.strMeal}</h3>
     

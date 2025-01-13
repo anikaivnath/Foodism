@@ -16,9 +16,9 @@ const apiEndpoints = {
 };
 
 const FoodRecipes = () => {
-  const { foodName } = useParams(); // Get food name from URL
+  const { foodName } = useParams(); 
   const [recipes, setRecipes] = useState([]);
-  const [loading, setLoading] = useState(true); // Loader state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!foodName || !apiEndpoints[foodName]) return;

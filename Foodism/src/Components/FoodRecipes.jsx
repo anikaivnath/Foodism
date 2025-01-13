@@ -21,6 +21,7 @@ const FoodRecipes = () => {
   const [loading, setLoading] = useState(true);
   const [prices, setPrices] = useState({}); // Store meal prices
 
+  // Fetch meal recipes
   useEffect(() => {
     if (!foodName || !apiEndpoints[foodName]) return;
 
@@ -28,25 +29,30 @@ const FoodRecipes = () => {
     axios
       .get(apiEndpoints[foodName])
       .then((response) => {
-        const meals = response.data.meals || [];
-        setRecipes(meals);
-        return axios.get("https://fakestoreapi.com/products");
+        setRecipes(response.data.meals || []);
       })
-      .then((response) => {
-        const productPrices = response.data.map((product) => product.price);
-        
-        // Assign random prices to meals
-        setPrices((prevPrices) => {
-          const newPrices = {};
-          recipes.forEach((meal, index) => {
-            newPrices[meal.idMeal] = productPrices[index % productPrices.length];
-          });
-          return newPrices;
-        });
-      })
-      .catch((error) => console.error("Error fetching data:", error))
+      .catch((error) => console.error("Error fetching recipes:", error))
       .finally(() => setLoading(false));
   }, [foodName]);
+
+  // Fetch product prices separately after recipes are loaded
+  useEffect(() => {
+    if (recipes.length === 0) return;
+
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((response) => {
+        const productPrices = response.data.map((product) => product.price);
+
+        // Assign random prices
+        const newPrices = {};
+        recipes.forEach((meal, index) => {
+          newPrices[meal.idMeal] = productPrices[index % productPrices.length];
+        });
+        setPrices(newPrices);
+      })
+      .catch((error) => console.error("Error fetching prices:", error));
+  }, [recipes]); // Depend on `recipes` to fetch prices only after they are loaded
 
   return (
     <div>
@@ -66,11 +72,11 @@ const FoodRecipes = () => {
                 className="w-[250px] h-[250px] rounded-xl"
               />
               <h3 className="mt-2 font-custom text-lg">{meal.strMeal}</h3>
-              <p className="text-red-800 font-bold">Price: ${prices[meal.idMeal] || "Loading..."}</p>
+              <p className="text-red-800 font-bold">
+                Price: ${prices[meal.idMeal] ? prices[meal.idMeal].toFixed(2) : "Loading..."}
+              </p>
               <div className="mt-2">
-                <a
-                  className="bg-green-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-green-700 inline-block"
-                >
+                <a className="bg-green-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-green-700 inline-block">
                   Order Now
                 </a>
               </div>

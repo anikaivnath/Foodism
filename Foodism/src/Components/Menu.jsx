@@ -23,8 +23,8 @@ const FoodRecipes = () => {
                 width="200px"
                 className="rounded-xl"
               />
-              <h3 className="text-center mt-2">{meal.strMeal}</h3>
-              <div className="text-center mt-2 bg-green-600 text-white rounded-lg p-2 cursor-pointer hover:bg-green-700">
+              <h3 className="text-center mt-2 font-custom">{meal.strMeal}</h3>
+              <div className="text-center  font-custom mt-2 bg-green-600 text-white rounded-lg p-2 cursor-pointer hover:bg-green-700">
                 <p>Order now</p>
               </div>
             </div>

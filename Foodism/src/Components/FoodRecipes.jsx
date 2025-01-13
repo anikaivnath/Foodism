@@ -35,7 +35,7 @@ const FoodRecipes = () => {
   return (
     <div>
       <div className="text-center m-4 font-custom">
-        <h1 className="text-2xl font-bold">{foodName} Recipes</h1>
+        <h1 className="text-2xl font-bold">{foodName} List </h1>
       </div>
 
       {loading ? (
@@ -52,10 +52,7 @@ const FoodRecipes = () => {
               <h3 className="mt-2 font-custom text-lg">{meal.strMeal}</h3>
               <div className="mt-2">
                 <a
-                  href={meal.strYoutube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-blue-700 inline-block"
+                  className="bg-green-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-green-700 inline-block"
                 >
                   Order Now
                 </a>

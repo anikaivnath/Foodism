@@ -25,7 +25,7 @@ const menuItems = [
 
 const Menu = () => {
   return (
-    <div className='bg-blue-100'>
+    <div className='bg-blue-200'>
       <div className='text-center p-4 font-custom '>
         <h1 className='text-xl'>Satisfy your cravings with food made to lift your mood</h1>
       </div>

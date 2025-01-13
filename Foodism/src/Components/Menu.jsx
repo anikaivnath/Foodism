@@ -14,24 +14,20 @@ const FoodRecipes = () => {
   return (
     <div>
       <div className="flex">
-        <div className="flex flex-wrap  justify-center gap-10">
+        <div className="flex flex-wrap justify-center gap-10">
           {recipes?.map(meal => (
-         
-            <div key={meal.idMeal} >
+            <div key={meal.idMeal}>
               <img
                 src={meal.strMealThumb}
                 alt={meal.strMeal}
                 width="200px"
-                className="rounded-lg"
+                className="rounded-xl"
               />
               <h3 className="text-center mt-2">{meal.strMeal}</h3>
-              <div className="text-center mt-2 bg-green-600 text-white rounded-lg p-2 cursor-pointer ">
-              <p>Order now</p>
+              <div className="text-center mt-2 bg-green-600 text-white rounded-lg p-2 cursor-pointer hover:bg-green-700">
+                <p>Order now</p>
               </div>
-            
             </div>
-           
-            
           ))}
         </div>
       </div>

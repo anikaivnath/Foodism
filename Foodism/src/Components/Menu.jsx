@@ -13,7 +13,7 @@ const FoodRecipes = () => {
   return (
     <div>
       <div className="flex">
-        <div className="flex flex-wrap gap-10 justify-center">
+        <div className="flex flex-wrap  justify-center gap-10">
           {recipes?.map(meal => (
          
             <div key={meal.idMeal} >
@@ -24,6 +24,10 @@ const FoodRecipes = () => {
                 className="rounded-lg"
               />
               <h3 className="text-center mt-2">{meal.strMeal}</h3>
+              <div className="text-center mt-2">
+              <p>Order now</p>
+              </div>
+            
             </div>
            
             

@@ -55,15 +55,15 @@ const FoodRecipes = () => {
   }, [recipes]); // Depend on `recipes` to fetch prices only after they are loaded
 
   return (
-    <div>
-      <div className="text-center m-4 font-custom">
+    <div className="bg-sky-200 ">
+      <div className="text-center m-4 font-custom ">
         <h1 className="text-2xl font-bold font-custom">{foodName} List</h1>
       </div>
 
       {loading ? (
         <p className="text-center text-gray-500">Loading...</p>
       ) : recipes.length > 0 ? (
-        <div className="flex flex-wrap justify-center gap-10">
+        <div className="flex flex-wrap justify-center gap-10 shadow-3xl">
           {recipes.map((meal) => (
             <div key={meal.idMeal} className="text-center">
               <img

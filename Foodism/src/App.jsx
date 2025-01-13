@@ -2,19 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import HeroSection from "./Components/HeroSection";
-
-import Menu from "./Components/Menu";  // Import Menu Component
+import Services from "./Components/Services";
+import Menu from "./Components/Menu"; 
 
 const App = () => {
   return (
     <Router>
       <NavBar />
       <Routes>
-        {/* Home Route with HeroSection */}
         <Route path="/" element={<><HeroSection /></>} />  
-        
-        {/* Menu Route without HeroSection */}
-        <Route path="/menu" element={<Menu />} />  
+        <Route path="/menu" element={<Menu />} /> 
+        <Route path="/services" element={<Services />} /> {/* Corrected the path */}
       </Routes>
     </Router>
   );

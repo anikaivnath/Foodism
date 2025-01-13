@@ -16,8 +16,8 @@ const NavBar = () => {
         {/* Navigation Links */}
         <div className="w-80 flex justify-around text-xl mt-5 cursor-pointer">
           <Link to="/" className="text-green-600">Home</Link>  
-          <Link to="/menu" className="text-blue-500">Menu</Link> {/* Clicking Menu goes to Menu Page */}
-          <p>Services</p>
+          <Link to="/menu" className="">Menu</Link> {/* Clicking Menu goes to Menu Page */}
+          <Link to="/Services" className=""> Services</Link>         
           <p>Offers</p>
         </div>
 

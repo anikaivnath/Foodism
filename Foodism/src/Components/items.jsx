@@ -5,7 +5,7 @@ const FoodRecipes = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s=Chicken")
+    axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s=")
       .then(response => setRecipes(response.data.meals))
  
   }, []);

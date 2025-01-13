@@ -1,12 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-const Menu = () => {
+const FoodRecipes = () => {
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s=Chicken")
+      .then(response => setRecipes(response.data.meals))
+      .catch(error => console.error("Error fetching data:", error));
+  }, []);
+
   return (
-    <div className='text-center mt-10  font-custom'>
-      <h1>Welcome to the Menu Page!</h1>
-      <p>Browse our delicious menu options here.</p>
+    <div>
+      <div className="flex">
+        <div className="flex flex-wrap gap-10 justify-center">
+          {recipes?.map(meal => (
+         
+            <div key={meal.idMeal} >
+              <img
+                src={meal.strMealThumb}
+                alt={meal.strMeal}
+                width="200px"
+                className="rounded-lg"
+              />
+              <h3 className="text-center mt-2">{meal.strMeal}</h3>
+            </div>
+           
+            
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Menu;
+export default FoodRecipes;

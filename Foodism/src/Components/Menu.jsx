@@ -29,7 +29,7 @@ const Menu = () => {
       <div className='text-center p-4 font-custom '>
         <h1 className='text-xl'>Satisfy your cravings with food made to lift your mood</h1>
       </div>
-      <div className='flex flex-wrap justify-center gap-10 drop-shadow-lg'>
+      <div className='flex flex-wrap justify-center gap-10 drop-shadow-2xl-lg'>
         {menuItems.map((item, index) => (
           <div key={index} className='text-center'>
             <img className='w-[300px] h-[300px] rounded-lg' src={item.src} alt={item.name} />

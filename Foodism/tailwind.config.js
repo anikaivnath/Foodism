@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        custom:["Tinos", "serif"]
+        custom:["Roboto", "serif"]
       }
     },
   },

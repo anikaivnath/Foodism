@@ -24,7 +24,7 @@ const FoodRecipes = () => {
                 className="rounded-lg"
               />
               <h3 className="text-center mt-2">{meal.strMeal}</h3>
-              <div className="text-center mt-2">
+              <div className="text-center mt-2 bg-green-600 text-white rounded-lg p-2 cursor-pointer ">
               <p>Order now</p>
               </div>
             

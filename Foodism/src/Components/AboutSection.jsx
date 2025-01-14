@@ -20,7 +20,7 @@ const AboutSection = () => {
         <h1 className='font-bold text-3xl mt-4'>Popular Catagories</h1>
     </div>
     <div>
-        <div className='flex flex-row'>
+        <div className='flex flex-row justify-center gap-4'>
         {
             items.map((item,index)=>(
                 <div key={index}>

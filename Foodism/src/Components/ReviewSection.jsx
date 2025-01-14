@@ -1,5 +1,5 @@
 import React from 'react'
-import Mask group from './image/Mask group .png'
+import Mask from './image/Mask.png'
 
 const ReviewSection = () => {
   return (
@@ -9,7 +9,7 @@ const ReviewSection = () => {
 
         </div>
         <div>
-          <img className='' src={Rectangle} alt="" />
+          <img className='bg{}' src={Mask} alt="" />
         </div>
     </div>
   )

@@ -10,17 +10,21 @@ import ReviewSection from "./Components/ReviewSection";
 
 const App = () => {
   return (
+    <>
+    
     <Router>
       <NavBar />   
       <Routes>
-        <Route path="/" element={<><HeroSection /></>} />  
+        <Route path="/" element={<><HeroSection />  <AboutSection/> <ReviewSection/> </>} />  
         <Route path="/menu" element={<Menu />} /> 
         <Route path="/services" element={<Services />} /> {/* Corrected the path */}
         <Route path="/food/:foodName" element={<FoodRecipes />} />
       </Routes>
-      <AboutSection/>
-      <ReviewSection/>
+     
     </Router>
+  
+    </>
+    
   );
 };
 

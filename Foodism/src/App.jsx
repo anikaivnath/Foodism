@@ -6,12 +6,12 @@ import Services from "./Components/Services";
 import FoodRecipes from "./Components/FoodRecipes";
 import AboutSection from "./Components/AboutSection";
 import Menu from "./Components/Menu"; 
+import ReviewSection from "./Components/ReviewSection";
 
 const App = () => {
   return (
     <Router>
-      <NavBar />
-      
+      <NavBar />   
       <Routes>
         <Route path="/" element={<><HeroSection /></>} />  
         <Route path="/menu" element={<Menu />} /> 
@@ -19,6 +19,7 @@ const App = () => {
         <Route path="/food/:foodName" element={<FoodRecipes />} />
       </Routes>
       <AboutSection/>
+      <ReviewSection/>
     </Router>
   );
 };

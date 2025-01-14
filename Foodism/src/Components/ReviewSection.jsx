@@ -11,6 +11,11 @@ const ReviewSection = () => {
             <div className="absolute top-6 left-8 bg-white px-3 py-1 rounded-lg">
             </div>
     </div>
+    <div>
+      <div>
+        <h1 className='font-bold text-3xl w-80'>What Our Customers Say About Us</h1>
+      </div>
+    </div>
     </div>
   )
 }

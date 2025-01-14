@@ -20,18 +20,17 @@ const AboutSection = () => {
         <h1 className='font-bold text-3xl mt-4'>Popular Catagories</h1>
     </div>
     <div>
-        <div className='flex flex-row justify-center gap-4'>
-        {
+        <div className='flex flex-row w-1/2 m-auto justify-center  justify-evenly  '>
+        { 
             items.map((item,index)=>(
-                <div key={index}>
-                <img src={item.src} alt={item.name} />
+                <div key={index} className='text-center bg-white-600 px-8 shadow-slate-400 shadow-lg rounded-2xl '>
+                <img src={item.src} alt={item.name}  className='w-20 rounded-md'/>
                 <h3>{item.name}</h3>
                 </div>
+                
 
             ))
-        }
-        
-      
+        } 
 
         </div>
     </div>

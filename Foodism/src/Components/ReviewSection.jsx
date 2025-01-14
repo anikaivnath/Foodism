@@ -12,8 +12,9 @@ const ReviewSection = () => {
             </div>
     </div>
     <div>
-      <div>
-        <h1 className='font-bold text-3xl w-80'>What Our Customers Say About Us</h1>
+      <div className='w-80 font-justify '>
+        <h1 className='font-bold text-3xl '>What Our Customers Say About Us</h1>
+        <p>“I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable”</p>
       </div>
     </div>
     </div>

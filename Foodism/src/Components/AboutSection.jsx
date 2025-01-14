@@ -5,7 +5,7 @@ const AboutSection = () => {
     <div>
     <div className="text-center m-4 font-custom">
         <p>Customer Favorites</p>
-        <h1>Popular Catagories</h1>
+        <h1 className='font-bold text-3xl'>Popular Catagories</h1>
     </div>
 
     </div>

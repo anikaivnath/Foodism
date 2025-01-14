@@ -20,10 +20,10 @@ const AboutSection = () => {
         <h1 className='font-bold text-3xl mt-4'>Popular Catagories</h1>
     </div>
     <div>
-        <div>
+        <div className='flex flex-row'>
         {
             items.map((item,index)=>(
-                <div key={index} clas>
+                <div key={index}>
                 <img src={item.src} alt={item.name} />
                 <h3>{item.name}</h3>
                 </div>

@@ -4,7 +4,7 @@ const ReviewSection = () => {
   return (
     <div>
         <div className='text-center m-4 font-custom'>
-            <p className=' text-red-500  '>Testimonials</p>
+            <p className=' text-red-500 m-4 '>Testimonials</p>
 
         </div>
     </div>

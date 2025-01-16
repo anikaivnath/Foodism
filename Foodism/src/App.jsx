@@ -20,7 +20,6 @@ const App = () => {
         <Route path="/services" element={<Services />} /> {/* Corrected the path */}
         <Route path="/food/:foodName" element={<FoodRecipes />} />
       </Routes>
-     
     </Router>
   
     </>

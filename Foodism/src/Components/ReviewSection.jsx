@@ -4,7 +4,7 @@ import Rectang from './image/Rectang.png'
 
 const ReviewSection = () => {
   return (
-    <div className='flex ml-20 gap-70 '>
+    <div className='flex ml-40 gap-70 '>
     <div className='relative'>
        <img className='absolute mt-[266px] ml-4 w-80 hidden md:block' src={Rectang} alt='rectang'/>
        <img className='w-80 relative' src={Mask} alt="picture" />

@@ -4,7 +4,7 @@ import Rectang from './image/Rectang.png'
 
 const ReviewSection = () => {
   return (
-    <div className='flex j'>
+    <div className='flex '>
     <div className='relative'>
        <img className='absolute mt-[266px] ml-4 w-80 hidden md:block' src={Rectang} alt='rectang'/>
        <img className='w-80 relative' src={Mask} alt="picture" />
@@ -12,8 +12,8 @@ const ReviewSection = () => {
             </div>
     </div>
     <div>
-      <div className='w-80 text-justify '>
-        <h1 className='font-bold text-3xl '>What Our Customers Say About Us</h1>
+      <div className='w-80 text-justify w-40 m-80 '>
+        <h1 className='font-bold text-3xl  '>What Our Customers Say About Us</h1>
         <p>“I had the pleasure of dining at Foodi last night, and I'm still raving 
         about the experience! The attention to detail in presentation and service was 
         impeccable”</p>

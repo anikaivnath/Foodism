@@ -19,7 +19,6 @@ const ReviewSection = () => {
         impeccable Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim similique nulla. Neque non, incidunt dolorem ipsa corrupti soluta laboriosam perspiciatis est eaque harum minima minus autem quidem quam reprehenderit!
         Velit eum voluptatem eos ut ducimus asperiores, ipsum debitis quo ad quidem, sunt iusto fuga consectetur facilis, blanditiis dolores. Praesentium, saepe! Suscipit aperiam tempora quos dolorem recusandae sit necessitatibus assumenda.”</p>
         <p className='mt-4'>Customer Feedback</p>
-        <p></p>
       </div>
     </div>
     </div>

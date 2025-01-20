@@ -6,6 +6,7 @@ const Services = () => {
   
     <h1 className='font-custom text-3xl text-center'>
     Explore Our Latest Services
+p
 
     </h1>
     </div> 

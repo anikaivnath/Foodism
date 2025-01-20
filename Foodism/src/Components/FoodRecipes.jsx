@@ -35,7 +35,6 @@ const FoodRecipes = () => {
       .finally(() => setLoading(false));
   }, [foodName]);
 
-  // Fetch product prices separately after recipes are loaded
   useEffect(() => {
     if (recipes.length === 0) return;
 
@@ -43,8 +42,6 @@ const FoodRecipes = () => {
       .get("https://fakestoreapi.com/products")
       .then((response) => {
         const productPrices = response.data.map((product) => product.price);
-
-        // Assign random prices
         const newPrices = {};
         recipes.forEach((meal, index) => {
           newPrices[meal.idMeal] = productPrices[index % productPrices.length];

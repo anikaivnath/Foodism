@@ -5,7 +5,7 @@ import Rice from './image/Rice.png'
 import Soup from './image/Soup.png'
 
 const items =[
-   {src:Burger,name:"Burger"},
+   { src:Burger,name:"Burger"},
    { src:Rice, name:"Rice"},
    { src:Cake, name:"Cake"},
    { src:Soup, name:"Soup"}
@@ -27,8 +27,6 @@ const AboutSection = () => {
                 <img src={item.src} alt={item.name}  className='w-20 rounded-md'/>
                 <h3>{item.name}</h3>
                 </div>
-                
-
             ))
         } 
 

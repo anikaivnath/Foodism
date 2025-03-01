@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { CartContext } from "../context/CartContext"; // Import Cart Context
 
 const apiEndpoints = {
   Burger: "https://www.themealdb.com/api/json/v1/1/search.php?s=Burger",
@@ -17,11 +18,11 @@ const apiEndpoints = {
 
 const FoodRecipes = () => {
   const { foodName } = useParams();
+  const { addToCart } = useContext(CartContext); // Access Cart Context
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [prices, setPrices] = useState({}); // Store meal prices
 
-  // Fetch meal recipes
   useEffect(() => {
     if (!foodName || !apiEndpoints[foodName]) return;
 
@@ -49,11 +50,11 @@ const FoodRecipes = () => {
         setPrices(newPrices);
       })
       .catch((error) => console.error("Error fetching prices:", error));
-  }, [recipes]); // Depend on `recipes` to fetch prices only after they are loaded
+  }, [recipes]);
 
   return (
     <div className="bg-sky-200 ">
-      <div className="text-center m-4 font-custom ">
+      <div className="text-center m-4 font-custom">
         <h1 className="text-2xl font-bold font-custom">{foodName} List</h1>
       </div>
 
@@ -73,9 +74,12 @@ const FoodRecipes = () => {
                 Price: ${prices[meal.idMeal] ? prices[meal.idMeal].toFixed(2) : "Loading..."}
               </p>
               <div className="mt-2">
-                <a className="bg-green-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-green-700 inline-block">
+                <button
+                  onClick={() => addToCart(meal, prices[meal.idMeal])}
+                  className="bg-green-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-green-700 inline-block"
+                >
                   Order Now
-                </a>
+                </button>
               </div>
             </div>
           ))}

@@ -40,8 +40,7 @@ const Menu = () => {
             <div className='font-custom mt-2'>
               <p className='text-xl'>{item.name}</p>
               <p className='font-custom mt-2 bg-green-600 text-white rounded-lg p-2 cursor-pointer hover:bg-green-700'
-                onClick={() => navigate(`/food/${item.name}`)} 
-              >
+                onClick={() => navigate(`/food/${item.name}`)} >
                 View
               </p>
             </div>

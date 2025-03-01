@@ -18,7 +18,7 @@ const ReviewSection = () => {
         about the experience! The attention to detail in presentation and service was 
         impeccable Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim similique nulla. Neque non, incidunt dolorem ipsa corrupti soluta laboriosam perspiciatis est eaque harum minima minus autem quidem quam reprehenderit!
         Velit eum voluptatem eos ut ducimus asperiores, ipsum debitis quo ad quidem, sunt iusto fuga consectetur facilis, blanditiis dolores. Praesentium, saepe! Suscipit aperiam tempora quos dolorem recusandae sit necessitatibus assumenda.”</p>
-        <p className='mt-4 bg-green-700 text-center text-white'>Customer Feedback</p>
+        <p className='mt-4 bg-green-700 text-center text-white p-2 min-w-max m-auto w-40 rounded-lg '>Customer Feedback</p>
       </div>
     </div>
     </div>

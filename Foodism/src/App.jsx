@@ -7,7 +7,7 @@ import FoodRecipes from "./Components/FoodRecipes";
 import AboutSection from "./Components/AboutSection";
 import Menu from "./Components/Menu"; 
 import ReviewSection from "./Components/ReviewSection";
-
+i
 const App = () => {
   return (
     <>

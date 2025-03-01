@@ -18,7 +18,6 @@ const FoodRecipes = ({ addToCart }) => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch meal recipes
   useEffect(() => {
     const foodName = "Pizza"; // You can dynamically pass this based on routing or selected food category
 
@@ -52,9 +51,7 @@ const FoodRecipes = ({ addToCart }) => {
                 className="w-[250px] h-[250px] rounded-xl"
               />
               <h3 className="mt-2 font-custom text-lg">{meal.strMeal}</h3>
-              <p className="text-red-800 font-bold">
-                Price: $10.00 {/* Example price */}
-              </p>
+              <p className="text-red-800 font-bold">Price: $10.00</p>
               <div className="mt-2">
                 <button
                   onClick={() => addToCart(meal, 10)} // Passing 10 as a placeholder price

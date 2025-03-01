@@ -15,16 +15,22 @@ const NavBar = () => {
 
         {/* Navigation Links */}
         <div className="w-80 flex justify-around text-xl mt-5 cursor-pointer">
-          <Link to="/" className="text-green-600">Home</Link>  
-          <Link to="/menu" className="">Menu</Link> {/* Clicking Menu goes to Menu Page */}
-          <Link to="/Services" className=""> Services</Link>         
+          <Link to="/" className="text-green-600">Home</Link>
+          <Link to="/menu" className="">Menu</Link>
+          <Link to="/services" className="">Services</Link>
           <p>Offers</p>
         </div>
 
         <div className="flex flex-row justify-around w-40 mt-5 cursor-pointer">
           <i className="text-xl"><FontAwesomeIcon icon={faSearch} /></i>
-          <i className="text-xl"><FontAwesomeIcon icon={faCartShopping} /></i>
-          <i className="text-xl text-white bg-green-400 px-4 rounded-xl"><FontAwesomeIcon icon={faPhone} /></i>
+          <Link to="/cart">
+            <i className="text-xl">
+              <FontAwesomeIcon icon={faCartShopping} />
+            </i>
+          </Link>
+          <i className="text-xl text-white bg-green-400 px-4 rounded-xl">
+            <FontAwesomeIcon icon={faPhone} />
+          </i>
         </div>
       </div>
     </div>

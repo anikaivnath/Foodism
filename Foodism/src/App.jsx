@@ -7,7 +7,7 @@ import FoodRecipes from "./Components/FoodRecipes";
 import AboutSection from "./Components/AboutSection";
 import Menu from "./Components/Menu"; 
 import ReviewSection from "./Components/ReviewSection";
-import CartContext  from "./Components/CartContext";
+
 const App = () => {
   return (
     <>
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/menu" element={<Menu />} /> 
         <Route path="/services" element={<Services />} /> {/* Corrected the path */}
         <Route path="/food/:foodName" element={<FoodRecipes />} />
-        <Route path="/cart" element={<CartContext />} />
+ 
       </Routes>
     </Router>
   

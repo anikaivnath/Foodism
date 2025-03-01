@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { CartContext } from "../context/CartContext"; // Import Cart Context
+import { CartContext } from "./CartContext"; // Import Cart Context
 
 const apiEndpoints = {
   Burger: "https://www.themealdb.com/api/json/v1/1/search.php?s=Burger",

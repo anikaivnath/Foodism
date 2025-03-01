@@ -14,11 +14,11 @@ const ReviewSection = () => {
     <div>
       <div className='  w-[600px] mt-[210px] ml-20 text-justify '>
         <h1 className='font-bold text-3xl mt-4'>What Our Customers Say About Us</h1>
-        <p className='w-[570px]'>“I had the pleasure of dining at Foodi last night, and I'm still raving 
+        <p className='w-[570px] mt-8 '>“I had the pleasure of dining at Foodi last night, and I'm still raving 
         about the experience! The attention to detail in presentation and service was 
         impeccable Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim similique nulla. Neque non, incidunt dolorem ipsa corrupti soluta laboriosam perspiciatis est eaque harum minima minus autem quidem quam reprehenderit!
         Velit eum voluptatem eos ut ducimus asperiores, ipsum debitis quo ad quidem, sunt iusto fuga consectetur facilis, blanditiis dolores. Praesentium, saepe! Suscipit aperiam tempora quos dolorem recusandae sit necessitatibus assumenda.”</p>
-        <p className='mt-4'>Customer Feedback</p>
+        <p className='mt-4 bg-green-700 text-center text-white'>Customer Feedback</p>
       </div>
     </div>
     </div>

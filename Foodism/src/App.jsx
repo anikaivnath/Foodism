@@ -11,7 +11,6 @@ import ReviewSection from "./Components/ReviewSection";
 const App = () => {
   return (
     <>
-    
     <Router>
       <NavBar />   
       <Routes>

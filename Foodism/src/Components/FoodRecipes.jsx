@@ -34,7 +34,7 @@ const FoodRecipes = ({ addToCart }) => {
   }, []);
 
   return (
-    <div className="bg-sky-200 ">
+    <div className="bg-sky-200 h-vh  ">
       <div className="text-center m-4 font-custom ">
         <h1 className="text-2xl font-bold font-custom">Food Recipes</h1>
       </div>

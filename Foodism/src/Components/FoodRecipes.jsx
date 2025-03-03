@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
 const apiEndpoints = {
@@ -15,13 +15,11 @@ const apiEndpoints = {
   Cake: "https://www.themealdb.com/api/json/v1/1/search.php?s=Cake",
 };
 
-const FoodRecipes = () => {
+const FoodRecipes = ({ cart, setCart }) => {
   const { foodName } = useParams();
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [prices, setPrices] = useState({});
-  const [cart, setCart] = useState([]); // Cart state to store added items
-  const navigate = useNavigate(); // Hook for navigation
 
   // Fetch meal recipes
   useEffect(() => {
@@ -55,16 +53,6 @@ const FoodRecipes = () => {
 
   const addToCart = (meal) => {
     setCart((prevCart) => [...prevCart, meal]); // Add the clicked meal to the cart
-  };
-
-  // Calculate total price of the items in the cart
-  const calculateTotal = () => {
-    return cart.reduce((total, item) => total + prices[item.idMeal], 0).toFixed(2);
-  };
-
-  // Handle navigation to the OrderPage with cart and total
-  const viewCart = () => {
-    navigate("/order", { state: { cart, total: calculateTotal() } });
   };
 
   return (
@@ -103,14 +91,11 @@ const FoodRecipes = () => {
         <p className="text-center text-gray-500">No recipes found for {foodName}.</p>
       )}
 
-      {/* Display cart contents */}
+      {/* Link to Cart Page */}
       <div className="fixed bottom-4 right-4 bg-green-600 text-white rounded-full p-3">
-        <button
-          onClick={viewCart}
-          className="text-lg font-bold"
-        >
-          View Cart ({cart.length}) - Total: ${calculateTotal()}
-        </button>
+        <Link to="/cart" className="text-lg font-bold">
+          View Cart ({cart.length})
+        </Link>
       </div>
     </div>
   );

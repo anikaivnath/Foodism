@@ -7,7 +7,7 @@ const Cart = ({ cart }) => {
         <h1 className="text-2xl font-bold">Your Cart</h1>
       </div>
       {cart.length > 0 ? (
-        <div className="flex flex-wrap justify-center gap-10 shadow-lg">
+        <div className="flex flex-wrap justify-center gap-10 ">
           {cart.map((meal, index) => (
             <div key={index} className="text-center">
               <img

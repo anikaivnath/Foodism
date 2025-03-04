@@ -16,9 +16,7 @@ const Cart = ({ cart }) => {
                 className="w-[250px] h-[250px] rounded-xl"
               />
               <h3 className="mt-2 font-custom text-lg">{meal.strMeal}</h3>
-              <p className="text-red-800 font-bold">
-                Price: ${prices[meal.idMeal] ? prices[meal.idMeal].toFixed(2) : "Loading..."}
-              </p>
+              
             </div>
           ))}
         </div>

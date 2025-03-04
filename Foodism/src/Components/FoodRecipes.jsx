@@ -101,4 +101,4 @@ const FoodRecipes = ({ cart, setCart }) => {
   );
 };
 
-export default FoodRecipes;
+export default FoodRecipes; 

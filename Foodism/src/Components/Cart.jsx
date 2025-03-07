@@ -3,7 +3,7 @@ import React from "react";
 const Cart = ({ cart }) => {
   return (
     <div className="bg-sky-200 min-h-screen">
-      <div className="text-center m-4 font-custom">
+      <div className="text-center p-4 font-custom">
         <h1 className="text-2xl font-bold">Your Cart</h1>
       </div>
       {cart.length > 0 ? (

@@ -1,5 +1,4 @@
 import React from "react";
-
 const Cart = ({ cart }) => {
   return (
     <div className="bg-sky-200 min-h-screen">

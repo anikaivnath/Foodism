@@ -43,7 +43,7 @@ const Cart = ({ cart, setCart }) => {
           <div className="text-center mt-4">
             <button
               onClick={handleCheckout}
-              className="bg-green-800 text-white rounded-lg px-6 py-3 cursor-pointer hover:bg-blue-700 font-bold"
+              className="bg-green-800 text-white rounded-lg px-6 py-3 cursor-pointer hover:bg-green-700 font-bold"
             >
               Checkout
             </button>

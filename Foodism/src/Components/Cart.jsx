@@ -30,7 +30,7 @@ const Cart = ({ cart, setCart }) => {
                 <p className="text-red-800 font-bold">Price: ${meal.price.toFixed(2)}</p>
                 <button
                   onClick={() => removeFromCart(index)}
-                  className="bg-red-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-red-700 mt-2"
+                  className="bg-red-800 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-red-700 mt-2"
                 >
                   Cancel
                 </button>
@@ -43,7 +43,7 @@ const Cart = ({ cart, setCart }) => {
           <div className="text-center mt-4">
             <button
               onClick={handleCheckout}
-              className="bg-blue-600 text-white rounded-lg px-6 py-3 cursor-pointer hover:bg-blue-700 font-bold"
+              className="bg-green-800 text-white rounded-lg px-6 py-3 cursor-pointer hover:bg-blue-700 font-bold"
             >
               Checkout
             </button>

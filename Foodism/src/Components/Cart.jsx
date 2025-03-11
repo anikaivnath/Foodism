@@ -6,7 +6,7 @@ const Cart = ({ cart }) => {
         <h1 className="text-2xl font-bold">Your Cart</h1>
       </div>
       {cart.length > 0 ? (
-        <div className="flex flex-wrap justify-center gap-10 ">
+        <div className="flex flex-wrap justify-center gap-10">
           {cart.map((meal, index) => (
             <div key={index} className="text-center">
               <img
@@ -14,8 +14,8 @@ const Cart = ({ cart }) => {
                 alt={meal.strMeal}
                 className="w-[250px] h-[250px] rounded-xl"
               />
-              <h3 className="mt-2 font-custom text-lg">{meal.strMeal}</h3>
-              
+              <h3 className="mt-2 text-lg font-custom p-2 rounded-lg ">{meal.strMeal}</h3>
+              <p className="text-red-800 font-bold">Price: ${meal.price.toFixed(2)}</p>
             </div>
           ))}
         </div>

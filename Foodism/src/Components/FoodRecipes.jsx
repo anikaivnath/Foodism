@@ -21,7 +21,6 @@ const FoodRecipes = ({ cart, setCart }) => {
   const [loading, setLoading] = useState(true);
   const [prices, setPrices] = useState({});
 
-  // Fetch meal recipes
   useEffect(() => {
     if (!foodName || !apiEndpoints[foodName]) return;
 
@@ -52,13 +51,14 @@ const FoodRecipes = ({ cart, setCart }) => {
   }, [recipes]);
 
   const addToCart = (meal) => {
-    setCart((prevCart) => [...prevCart, meal]); // Add the clicked meal to the cart
+    const mealWithPrice = { ...meal, price: prices[meal.idMeal] || 0 };
+    setCart((prevCart) => [...prevCart, mealWithPrice]);
   };
 
   return (
     <div className="bg-sky-200">
       <div className="text-center m-4 font-custom">
-        <h1 className="text-2xl font-bold font-custom">{foodName} List</h1>
+        <h1 className="text-2xl font-bold">{foodName} List</h1>
       </div>
 
       {loading ? (
@@ -72,18 +72,16 @@ const FoodRecipes = ({ cart, setCart }) => {
                 alt={meal.strMeal}
                 className="w-[250px] h-[250px] rounded-xl"
               />
-              <h3 className="mt-2 font-custom text-lg">{meal.strMeal}</h3>
+              <h3 className="mt-2 text-lg font-custom">{meal.strMeal}</h3>
               <p className="text-red-800 font-bold">
                 Price: ${prices[meal.idMeal] ? prices[meal.idMeal].toFixed(2) : "Loading..."}
               </p>
-              <div className="mt-2">
-                <button
-                  onClick={() => addToCart(meal)}
-                  className="bg-green-600 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-green-700 inline-block"
-                >
-                  Order Now
-                </button>
-              </div>
+              <button
+                onClick={() => addToCart(meal)}
+                className="mt-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+              >
+                Order Now
+              </button>
             </div>
           ))}
         </div>
@@ -91,7 +89,6 @@ const FoodRecipes = ({ cart, setCart }) => {
         <p className="text-center text-gray-500">No recipes found for {foodName}.</p>
       )}
 
-      {/* Link to Cart Page */}
       <div className="fixed bottom-4 right-4 bg-green-600 text-white rounded-full p-3">
         <Link to="/cart" className="text-lg font-bold">
           View Cart ({cart.length})
@@ -101,4 +98,4 @@ const FoodRecipes = ({ cart, setCart }) => {
   );
 };
 
-export default FoodRecipes; 
+export default FoodRecipes;

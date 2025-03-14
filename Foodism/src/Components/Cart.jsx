@@ -8,7 +8,7 @@ const Cart = ({ cart, setCart }) => {
 
   const handleCheckout = () => {
     alert("Thank you for your purchase! Your order has been placed.");
-    setCart([]); // Clear cart after checkout
+  // Clear cart after checkout
   };
 
   return (

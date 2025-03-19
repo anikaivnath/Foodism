@@ -1,56 +1,62 @@
 import React from "react";
+
 const Cart = ({ cart, setCart }) => {
-  const totalAmount = cart.reduce((acc, item) => acc + (item.price || 0), 0);
+  // Group items by count
+  const cartItems = cart.reduce((acc, meal) => {
+    acc[meal.idMeal] = acc[meal.idMeal]
+      ? { ...acc[meal.idMeal], quantity: acc[meal.idMeal].quantity + 1 }
+      : { ...meal, quantity: 1 };
+    return acc;
+  }, {});
 
-  const removeFromCart = (index) => {
-    setCart((prevCart) => prevCart.filter((_, i) => i !== index));
+  const handleCancel = (idMeal) => {
+    setCart((prevCart) => {
+      const updatedCart = [...prevCart];
+      const index = updatedCart.findIndex((item) => item.idMeal === idMeal);
+
+      if (index !== -1) {
+        updatedCart.splice(index, 1); // Remove one instance
+      }
+      return updatedCart;
+    });
   };
 
-  const handleCheckout = () => {
-    alert("Thank you for your purchase! Your order has been placed.");
-   
-  };
+  // Calculate Total Price
+  const totalPrice = Object.values(cartItems).reduce(
+    (sum, item) => sum + (item.price || 0) * item.quantity,
+    0
+  );
 
   return (
-    <div className="bg-sky-200 min-h-screen">
-      <div className="text-center p-4 font-custom">
-        <h1 className="text-2xl font-bold">Your Cart</h1>
-      </div>
-      {cart.length > 0 ? (
-        <>
-          <div className="flex flex-wrap justify-center gap-10">
-            {cart.map((meal, index) => (
-              <div key={index} className="text-center">
-                <img
-                  src={meal.strMealThumb}
-                  alt={meal.strMeal}
-                  className="w-[250px] h-[250px] rounded-xl"
-                />
-                <h3 className="mt-2 font-custom text-lg">{meal.strMeal}</h3>
-                <p className="text-red-800 font-bold">Price: ${meal.price.toFixed(2)}</p>
-                <button
-                  onClick={() => removeFromCart(index)}
-                  className="bg-red-800 text-white rounded-lg px-4 py-2 cursor-pointer hover:bg-red-700 mt-2"
-                >
-                  Cancel
-                </button>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-6">
-            <h2 className="text-xl font-bold">Total Amount: ${totalAmount.toFixed(2)}</h2>
-          </div>
-          <div className="text-center mt-4">
-            <button
-              onClick={handleCheckout}
-              className="bg-green-800 text-white rounded-lg px-6 py-3 cursor-pointer hover:bg-green-700 font-bold"
-            >
-              Checkout
-            </button>
-          </div>
-        </>
+    <div className="bg-sky-200 min-h-screen p-4">
+      <h1 className="text-center text-2xl font-bold">Your Cart</h1>
+
+      {Object.keys(cartItems).length > 0 ? (
+        <div className="flex flex-wrap justify-center gap-10 mt-4">
+          {Object.values(cartItems).map((meal) => (
+            <div key={meal.idMeal} className="text-center bg-white p-4 rounded-lg shadow-md">
+              <img src={meal.strMealThumb} alt={meal.strMeal} className="w-[250px] h-[250px] rounded-xl" />
+              <h3 className="mt-2 font-semibold">{meal.strMeal}</h3>
+              <p className="text-red-800 font-bold">Price: ${meal.price?.toFixed(2)}</p>
+              <p className="text-gray-700">Quantity: {meal.quantity}</p>
+              <button
+                onClick={() => handleCancel(meal.idMeal)}
+                className="bg-red-600 text-white rounded-lg px-4 py-2 mt-2 hover:bg-red-700"
+              >
+                Cancel
+              </button>
+            </div>
+          ))}
+        </div>
       ) : (
-        <p className="text-center text-gray-500">Your cart is empty.</p>
+        <p className="text-center text-gray-500 mt-4">Your cart is empty.</p>
+      )}
+
+      {/* Total Amount */}
+      {cart.length > 0 && (
+        <div className="text-center mt-6 text-lg font-bold">
+          Total Amount: ${totalPrice.toFixed(2)}
+        </div>
       )}
     </div>
   );

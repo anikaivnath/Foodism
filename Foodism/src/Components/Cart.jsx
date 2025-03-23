@@ -11,12 +11,19 @@ const Cart = ({ cart, setCart }) => {
 
   const handleCancel = (idMeal) => {
     setCart((prevCart) => {
+      // Find the meal to update its quantity
       const updatedCart = [...prevCart];
-      const index = updatedCart.findIndex((item) => item.idMeal === idMeal);
+      const mealIndex = updatedCart.findIndex((meal) => meal.idMeal === idMeal);
 
-      if (index !== -1) {
-        updatedCart.splice(index, 1); // Remove one instance
+      if (mealIndex !== -1) {
+        // Decrease the quantity if greater than 1, else remove the meal
+        if (updatedCart[mealIndex].quantity > 1) {
+          updatedCart[mealIndex].quantity -= 1;
+        } else {
+          updatedCart.splice(mealIndex, 1); // Remove the meal if quantity is 1
+        }
       }
+
       return updatedCart;
     });
   };
@@ -52,7 +59,7 @@ const Cart = ({ cart, setCart }) => {
         <p className="text-center text-gray-500 mt-4">Your cart is empty.</p>
       )}
 
-      {/* Total Amount */}
+      {}
       {cart.length > 0 && (
         <div className="text-center mt-6 text-lg font-bold">
           Total Amount: ${totalPrice.toFixed(2)}

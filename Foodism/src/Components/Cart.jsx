@@ -11,16 +11,14 @@ const Cart = ({ cart, setCart }) => {
 
   const handleCancel = (idMeal) => {
     setCart((prevCart) => {
-      // Find the meal to update its quantity
       const updatedCart = [...prevCart];
       const mealIndex = updatedCart.findIndex((meal) => meal.idMeal === idMeal);
 
       if (mealIndex !== -1) {
-        // Decrease the quantity if greater than 1, else remove the meal
         if (updatedCart[mealIndex].quantity > 1) {
           updatedCart[mealIndex].quantity -= 1;
         } else {
-          updatedCart.splice(mealIndex, 1); // Remove the meal if quantity is 1
+          updatedCart.splice(mealIndex, 1); 
         }
       }
 

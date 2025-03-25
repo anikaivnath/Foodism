@@ -1,7 +1,7 @@
 import React from "react";
 
 const Cart = ({ cart, setCart }) => {
-  // Group items by count
+
   const cartItems = cart.reduce((acc, meal) => {
     acc[meal.idMeal] = acc[meal.idMeal]
       ? { ...acc[meal.idMeal], quantity: acc[meal.idMeal].quantity + 1 }
@@ -26,7 +26,7 @@ const Cart = ({ cart, setCart }) => {
     });
   };
 
-  // Calculate Total Price
+  
   const totalPrice = Object.values(cartItems).reduce(
     (sum, item) => sum + (item.price || 0) * item.quantity,
     0

@@ -7,7 +7,7 @@ import FoodRecipes from "./Components/FoodRecipes";
 import AboutSection from "./Components/AboutSection";
 import Menu from "./Components/Menu"; 
 import ReviewSection from "./Components/ReviewSection";
-import Cart from "./Components/Cart";  // Import the Cart component
+
 
 const App = () => {
   const [cart, setCart] = useState([]); // Store cart items in App.js state
@@ -21,8 +21,7 @@ const App = () => {
           <Route path="/menu" element={<Menu />} /> 
           <Route path="/services" element={<Services />} /> 
           <Route path="/food/:foodName" element={<FoodRecipes cart={cart} setCart={setCart} />} />
-          <Route path="/cart" element={<Cart cart={cart} />} /> {/* Added the new Cart route */}
-        </Routes>
+           </Routes>
       </Router>
     </>
   );

@@ -1,19 +1,15 @@
 import React from "react";
-
 const Cart = ({ cart, setCart }) => {
-
   const cartItems = cart.reduce((acc, meal) => {
     acc[meal.idMeal] = acc[meal.idMeal]
       ? { ...acc[meal.idMeal], quantity: acc[meal.idMeal].quantity + 1 }
       : { ...meal, quantity: 1 };
     return acc;
   }, {});
-
   const handleCancel = (idMeal) => {
     setCart((prevCart) => {
       const updatedCart = [...prevCart];
       const mealIndex = updatedCart.findIndex((meal) => meal.idMeal === idMeal);
-
       if (mealIndex !== -1) {
         if (updatedCart[mealIndex].quantity > 1) {
           updatedCart[mealIndex].quantity -= 1;
@@ -21,17 +17,13 @@ const Cart = ({ cart, setCart }) => {
           updatedCart.splice(mealIndex, 1); 
         }
       }
-
       return updatedCart;
     });
   };
-
-  
   const totalPrice = Object.values(cartItems).reduce(
     (sum, item) => sum + (item.price || 0) * item.quantity,
     0
   );
-
   return (
     <div className="bg-sky-200 min-h-screen p-4">
       <h1 className="text-center text-2xl font-bold">Your Cart</h1>

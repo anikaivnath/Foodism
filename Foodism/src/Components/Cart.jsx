@@ -56,7 +56,6 @@ const Cart = ({ cart, setCart }) => {
       ) : (
         <p className="text-center text-gray-500 mt-4">Your cart is empty.</p>
       )}
-
       {}
       {cart.length > 0 && (
         <div className="text-center mt-6 text-lg font-bold">

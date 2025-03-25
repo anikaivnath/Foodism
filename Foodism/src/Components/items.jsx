@@ -9,7 +9,6 @@ const FoodRecipes = () => {
       .then(response => setRecipes(response.data.meals))
  
   }, []);
-
   return (
     <div>
       <div className="flex">

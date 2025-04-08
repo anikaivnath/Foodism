@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
 import Burger from "./image/Burger.png"; 
 import pizza from "./image/pizza.png"; 
 import pasta from "./image/pasta.png"; 

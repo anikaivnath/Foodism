@@ -18,14 +18,14 @@ const journey = () => {
     </div>
     </div>
 
-    <div className='w-[200px] justify-center text-green-600 shadow-lg '>
+    <div className='w-[250px] justify-center text-green-600 shadow-lg p-2'>
   <p className='text-center text-2xl'>
     <FontAwesomeIcon icon={faMugHot} />
   </p>
   <p className='text-center text-xl'>
     Catering
   </p>
-  <p>Delight your guests with our flavors and presentation</p>
+  <p className='pl-2'>Delight your guests with our flavors and presentation</p>
 </div>
 
     

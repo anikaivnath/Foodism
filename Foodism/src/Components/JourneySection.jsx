@@ -22,7 +22,7 @@ const journey = () => {
       <p className=' text-center text-2xl'>
          <FontAwesomeIcon icon={faMugHot} />
       </p>
-      <p className='text-center'>
+      <p className='text-center text-xl'>
         Catering
       </p>
       <p>Delight your guests with our flavors and  presentation</p>

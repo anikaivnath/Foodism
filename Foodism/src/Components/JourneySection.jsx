@@ -18,7 +18,7 @@ const journey = () => {
     </div>
     </div>
 
-    <div>
+    <div className=' w-40 justify-center'>
       <p>
          <FontAwesomeIcon icon={faMugHot} />
       </p>

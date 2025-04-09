@@ -20,10 +20,12 @@ const journey = () => {
 
     <div>
       <p>
-     
          <FontAwesomeIcon icon={faMugHot} />
-    
       </p>
+      <p>
+        Catering
+      </p>
+      <p>Delight your guests with our flavors and  presentation</p>
     </div>
     
     

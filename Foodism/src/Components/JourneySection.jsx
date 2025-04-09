@@ -1,5 +1,4 @@
 import React from 'react'
-
 const journey = () => {
   return (
     <div>
@@ -8,7 +7,7 @@ const journey = () => {
     <div>
     <h1>Our Culinary Journey And Services</h1>
     </div>
-    <div className='w-80'>
+    <div className='w-80 '>
       <p>Rooted in passion, we curate unforgettable dining experiences and offer exceptional services, blending culinary artistry with warm hospitality.</p>
     </div>
     <p>Explore</p>

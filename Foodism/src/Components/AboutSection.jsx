@@ -11,7 +11,6 @@ const items =[
    { src:Soup, name:"Soup"}
 ]
 
-
 const AboutSection = () => {
   return (
     <div>

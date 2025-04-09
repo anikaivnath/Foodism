@@ -7,6 +7,12 @@ const journey = () => {
     <p>
     Our Story & Services
     </p>
+    <div>
+    <h1>
+    Our Culinary Journey And Services
+    </h1>
+
+    </div>
     
 
 

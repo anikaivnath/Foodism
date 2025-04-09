@@ -27,7 +27,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Right Section */}
+      {}
       <div className='relative'>
         <img className='absolute mt-32 ml-10  w-[400px] hidden md:block' src={Rectangle} alt="background" />
         <img className='w-[460px] relative' src={Intersect} alt="picture" />

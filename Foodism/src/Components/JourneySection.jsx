@@ -10,7 +10,7 @@ const journey = () => {
     <div className='w-80 '>
       <p>Rooted in passion, we curate unforgettable dining experiences and offer exceptional services, blending culinary artistry with warm hospitality.</p>
     </div>
-    <p>Explore</p>
+    <p className=' bg-green-400'>Explore</p>
     </div>
     
     </div>

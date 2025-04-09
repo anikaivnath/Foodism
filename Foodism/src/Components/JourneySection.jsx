@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMugHot, faStar } from '@fortawesome/free-solid-svg-icons';
 const journey = () => {
   return (
     <div>
@@ -18,7 +20,9 @@ const journey = () => {
 
     <div>
       <p>
-      <FontAwesomeIcon icon="fa-solid fa-mug-hot" />
+     
+         <FontAwesomeIcon icon={faMugHot} />
+    
       </p>
     </div>
     

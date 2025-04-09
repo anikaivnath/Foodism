@@ -4,7 +4,12 @@ const journey = () => {
   return (
     <div>
     <div>
-      
+    <p>
+    Our Story & Services
+    </p>
+    
+
+
     </div>
     
     </div>

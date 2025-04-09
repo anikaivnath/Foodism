@@ -14,15 +14,15 @@ const journey = () => {
      offer exceptional services, blending culinary artistry with  
      warm hospitality.</p>
     </div>
-    <p className=' bg-green-800 w-max p-2 text-white rounded'>Explore</p>
+    <p className=' bg-green-700 w-max p-2 text-white rounded'>Explore</p>
     </div>
     </div>
 
     <div className=' w-40 justify-center'>
-      <p>
+      <p className=' text-center text-2xl'>
          <FontAwesomeIcon icon={faMugHot} />
       </p>
-      <p>
+      <p className='text-center'>
         Catering
       </p>
       <p>Delight your guests with our flavors and  presentation</p>

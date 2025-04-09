@@ -18,7 +18,6 @@ const App = () => {
         <NavBar />   
         <Routes>
           <Route path="/" element={<><HeroSection /> <AboutSection /> <ReviewSection /> <JourneySection /></>} />  {/* Added JourneySection */}
-
           <Route path="/menu" element={<Menu />} /> 
           <Route path="/services" element={<Services />} /> 
           <Route path="/food/:foodName" element={<FoodRecipes cart={cart} setCart={setCart} />} />

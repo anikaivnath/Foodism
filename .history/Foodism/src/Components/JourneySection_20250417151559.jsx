@@ -6,7 +6,7 @@ const journey = () => {
     <div>
       <div className='w-80 '>
         <div>
-          <p className='text-red-600 '>Our Story & Services</p>
+          <p>Our Story & Services</p>
           <div>
             <h1>Our Culinary Journey And Services</h1>
           </div>

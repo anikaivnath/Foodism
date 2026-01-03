@@ -5,7 +5,6 @@ import {
   faClock,
   faCartShopping,
   faGift,
- 
 } from "@fortawesome/free-solid-svg-icons";
 
 const Journey = () => {

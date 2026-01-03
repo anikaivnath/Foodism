@@ -5,7 +5,6 @@ import {
   faClock,
   faCartShopping,
   faGift,
- 
 } from "@fortawesome/free-solid-svg-icons";
 
 const Journey = () => {
@@ -74,7 +73,7 @@ const Journey = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white p-6 rounded-2xl shadow-lg  shadow-green-200 text-center">
+          <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
             <FontAwesomeIcon
               icon={faGift}
               className="text-green-500 text-3xl mb-4"

@@ -14,7 +14,7 @@ const journey = () => {
             offer exceptional services, blending culinary artistry with
             warm hospitality.</p>
           </div>
-          <div className=' '>
+          <div className=text- center'>
             <p className=' bg-green-700 w-max p-2 text-white rounded'>Explore</p>
           </div>
         

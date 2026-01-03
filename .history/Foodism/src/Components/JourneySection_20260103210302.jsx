@@ -25,7 +25,7 @@ const journey = () => {
         <p className='text-center text-xl'>
           Catering
         </p>
-        <p className='pl-2 text-center text-green-500' >Delight your guests with our flavors and presentation</p>
+        <p className='pl-2 text-center font-extralight'>Delight your guests with our flavors and presentation</p>
       </div>
       </div>
 

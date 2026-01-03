@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Burger from './image/Burger.png'
 import Cake from './image/Cake.png'
 import Rice from './image/Rice.png'

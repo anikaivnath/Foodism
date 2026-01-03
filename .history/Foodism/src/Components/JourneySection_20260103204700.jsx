@@ -17,8 +17,8 @@ const journey = () => {
           <p className=' bg-green-700 w-max p-2 text-white rounded'>Explore</p>
         </div>
       </div>
-      <div>
-         <div className='w-[20px] justify-center text-green-600 shadow-lg shadow-black p-2 rounded-md'>
+
+      <div className='w-[250px] justify-center text-green-600 shadow-lg p-2'>
         <p className='text-center text-2xl'>
           <FontAwesomeIcon icon={faMugHot} />
         </p>
@@ -27,9 +27,6 @@ const journey = () => {
         </p>
         <p className='pl-2'>Delight your guests with our flavors and presentation</p>
       </div>
-      </div>
-
-     
 
 
 

@@ -18,7 +18,7 @@ const journey = () => {
         </div>
       </div>
       <div>
-         <div className='w-[20px] justify-center text-green-600 shadow-lg shadow-black p-2 rounded-md'>
+         <div className='w-[250px] justify-center text-green-600 shadow-lg shadow-black p-2 radius'>
         <p className='text-center text-2xl'>
           <FontAwesomeIcon icon={faMugHot} />
         </p>

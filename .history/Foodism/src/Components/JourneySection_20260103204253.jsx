@@ -6,9 +6,9 @@ const journey = () => {
     <div>
       <div className='w-80 '>
         <div>
-          <p className='text-red-600 font-bold text-center '>Our Story & Services</p>
+          <p className='text-red-600 font-bold '>Our Story & Services</p>
           <div>
-            <h1 className='text-black font-bold text-[30px]'>Our Culinary Journey And Services</h1>
+            <h1 className='text-black font-bold text-[400px]'>Our Culinary Journey And Services</h1>
           </div>
           <div><p>Rooted in passion, we curate unforgettable dining experiences and
             offer exceptional services, blending culinary artistry with

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMugHot, faStar } from '@fortawesome/free-solid-svg-icons';
 const journey = () => {
   return (
-    <dev className='w-800'>
+    <dev className='w-800 text-center'>
 
    
     <div className='flex'>

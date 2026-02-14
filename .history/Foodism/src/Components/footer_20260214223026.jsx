@@ -3,7 +3,7 @@ import React from 'react'
 const footer = () => {
   return (
     <>
-    <div className='bg-emerald-100 flex'>
+    <div className='bg-emerald-100'>
       <div className='ml-[100px] w-[200px] pt-10  '>
 
         <h1>
@@ -13,10 +13,8 @@ const footer = () => {
         
         <div>
             <p>Useful links</p>
-            <ul>About us</ul>
-            <ul>Events</ul>
-            <ul>blog</ul>
-            <ul>FAQ</ul>
+            <li>About us</li>
+            <li>d</li>
         </div>
     </div>
 

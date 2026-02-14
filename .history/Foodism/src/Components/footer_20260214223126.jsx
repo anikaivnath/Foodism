@@ -3,7 +3,7 @@ import React from 'react'
 const footer = () => {
   return (
     <>
-    <div className='bg-emerald-100 flex'>
+    <div className='bg-emerald-100'>
       <div className='ml-[100px] w-[200px] pt-10  '>
 
         <h1>

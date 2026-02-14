@@ -8,7 +8,7 @@ const footer = () => {
 
         <h1>
           <p className='font-bold text-3xl'> <span className='text-white p-[4px] bg-green-500 rounded-lg'>F</span>oodi</p> 
-          <p className='mt-2 '>Savor the artistry where every dish is a culinary masterpiece</p>
+          <p className=''>Savor the artistry where every dish is a culinary masterpiece</p>
         </h1>
     </div>
 

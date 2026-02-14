@@ -7,7 +7,8 @@ import FoodRecipes from "./Components/FoodRecipes";
 import AboutSection from "./Components/AboutSection";
 import Menu from "./Components/Menu"; 
 import ReviewSection from "./Components/ReviewSection";
-import JourneySection from "./Components/JourneySection"; // Corrected component name
+import JourneySection from "./Components/JourneySection";
+import footer from "./Components/footer"; // Corrected component name
 
 const App = () => {
   const [cart, setCart] = useState([]); // Store cart items in App.js state
@@ -17,7 +18,7 @@ const App = () => {
       <Router>
         <NavBar />   
         <Routes>
-          <Route path="/" element={<><HeroSection /> <AboutSection /> <ReviewSection /> <JourneySection /></>} />  {/* Added JourneySection */}
+          <Route path="/" element={<><HeroSection /> <AboutSection /> <ReviewSection /> <JourneySection />} />  {/* Added JourneySection */}
           <Route path="/menu" element={<Menu />} /> 
           <Route path="/services" element={<Services />} /> 
           <Route path="/food/:foodName" element={<FoodRecipes cart={cart} setCart={setCart} />} />

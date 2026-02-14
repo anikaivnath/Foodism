@@ -18,7 +18,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route
-          path="/"
+          path="/Home"
           element={
             <>
               <HeroSection />

@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex justify-between">
 
         {/* Logo Section */}
-        <div className="w-[200px]">
+        <div className="w-[250px]">
           <h1 className="font-bold text-3xl">
             <span className="text-white p-[4px] bg-green-500 rounded-lg">
               F
@@ -14,7 +14,7 @@ const Footer = () => {
             oodi
           </h1>
 
-          <p className="mt-3 text-gray-600 ">
+          <p className="mt-3 text-gray-600">
             Savor the artistry where every dish is a culinary masterpiece
           </p>
         </div>
@@ -29,17 +29,9 @@ const Footer = () => {
             <li className="cursor-pointer hover:text-green-600">FAQ</li>
           </ul>
         </div>
-       
 
        <div>
-         <h2 className="font-semibold text-lg mb-3 ">Main menu</h2>
-          <ul className=" space-y-2 text-gray-700">
-            <li className="cursor-pointer hover:text-green-600">Home</li>
-            <li className="cursor-pointer hover:text-green-600">Menu</li>
-            <li className="cursor-pointer hover:text-green-600">service</li>
-            <li className="cursor-pointer hover:text-green-600">offers </li>
-          </ul>
-
+        
        </div>
         <div>
           <h2 className="font-semibold text-lg mb-3">Contact</h2>

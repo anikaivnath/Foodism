@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex justify-between">
 
         {/* Logo Section */}
-        <div className="w-[200px]">
+        <div className="w-[250px]">
           <h1 className="font-bold text-3xl">
             <span className="text-white p-[4px] bg-green-500 rounded-lg">
               F

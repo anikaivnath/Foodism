@@ -33,7 +33,8 @@ const NavBar = () => {
           <i className="text-xl" onClick={() => setShowSearch(!showSearch)}>
             <FontAwesomeIcon icon={faSearch} />
           </i>
-     
+
+          {/* Search Input (toggle on click) */}
           {showSearch && (
             <input
               type="text"

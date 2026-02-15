@@ -33,15 +33,15 @@ const NavBar = () => {
           <i className="text-xl" onClick={() => setShowSearch(!showSearch)}>
             <FontAwesomeIcon icon={faSearch} />
           </i>
-     
+
+          {/* Search Input (toggle on click) */}
           {showSearch && (
             <input
               type="text"
-              placeholder="what are you looking for?"
+              placeholder="Search..."
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
-              className="border px-2 py-1 rounded outline-none" 
-
+              className="border px-2 py-1 rounded outline-none"
             />
           )}
 
